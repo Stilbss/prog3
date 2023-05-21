@@ -1,0 +1,336 @@
+/*CSS stila default vērtību iestatīšana*/
+
+:root{
+    --main-color:#6e8ae8;
+    --black:#555;
+    --light-color:#777;
+    --bg:#e9f3fc;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    background-color: darkblue;
+}
+
+*::selection{
+    background:var(--main-color);
+    color:#fff;
+}
+
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--light-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+
+section{
+    padding:2rem 9%;
+}
+
+/*Header un navbar izveide*/
+
+header {
+    position: fixed;
+    background: rgb(1, 1, 34);
+    height: 9rem;
+    width: 100%;
+    color: #e9f3fc;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    margin-top: 3rem;
+    margin-left: 4rem;
+   
+}
+
+li {
+    float: right;
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+li button{
+    font-size: 2.3rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+/*Sakuma, jeb iepazisanas sekcijas izveide */
+
+section {
+    background: darkblue;
+    height: 45rem;
+    width: 100%;
+}
+
+section h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+section h4 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+section h5 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+button:hover {
+    pointer-events:none;
+}
+
+/*Lietotaja login izveide */
+
+.login-box-container {
+    background: lightblue;
+    display: flex;
+    height: 60rem;
+    width: 90rem;
+}
+
+.lk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poga {
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form {
+    height: 620px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.login_body {
+    background-color: black;
+}
+
+/*lietotajs.html*/
+
+.parent {
+    border: solid 1px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+    width: 100%;
+}
+
+.box {
+    text-align: center;
+    width:60rem;
+    height: 50rem;
+    margin: 1rem;
+    justify-content: center;
+    border: 0.3rem solid black;
+    box-shadow: #080710;
+}
+
+.uzraksts {
+    color: beige;
+    font-size: 2rem;
+}
+
+.inner {
+    
+    height: 5rem;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h5 {
+    color: beige;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.inner p {
+    color: beige;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+.linija {
+    width: 100%;
+    height: 0.5rem;
+    color: black;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+.linija2 {
+    width: 100%;
+    height: 0.2rem;
+    color: black;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+#idas .virsraksts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+    color: white;
+}

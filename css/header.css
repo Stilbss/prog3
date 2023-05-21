@@ -1,0 +1,96 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.header1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 5px 80px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.515);
+    border:1px dotted #fff;
+
+
+}
+
+
+
+.head2{
+
+    height: 100px;
+    width: 50%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    text-shadow: 4px;
+    text-indent: 100px;
+    color: white;
+        
+}
+
+
+.head3{
+
+    float: right;
+    width: 50%;
+    height: 100px;
+    
+}
+
+.head3 ul{
+
+    list-style: none;
+
+}
+
+.head3 ul li{
+    display: inline-flex;  
+    padding: 10px 20px;
+
+}
+
+.head3 ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+
+
+
+}
+
+.head3 ul li a:hover{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #C37C8D;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: url(img/img2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+button{
+    background: #C37C8D;
+    border-radius: 25px;
+}
+
+button:hover{
+    background: greenyellow;
+    border-radius: 25px;
+    color: white;
+}
